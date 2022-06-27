@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Awards from "./Awards";
 import PresentationItem from "./PresentationItem";
+import { AnimationStyle } from "./AnimationStyle";
+import { AnimationCounterStyle } from "./AnimationCounterStyle";
 
 const PresentationContainer = styled.div`
   display: flex;
@@ -9,21 +11,28 @@ const PresentationContainer = styled.div`
 
 const Presentations = () => {
   const items = [
-    { numberTitle: "700만 명", subTitle: "여행자" },
-    { numberTitle: "100만 개", subTitle: "여행 리뷰" },
-    { numberTitle: "470만 개", subTitle: "여행 일정" }
+    { number: 700, middleTitle: "만 명", subTitle: "여행자" },
+    { number: 100, middleTitle: "만 개", subTitle: "여행 리뷰" },
+    { number: 470, middleTitle: "만 개", subTitle: "여행 일정" }
   ];
   return (
-    <PresentationContainer>
-      {items.map((item, index) => (
-        <PresentationItem
-          key={index}
-          numberTitle={item.numberTitle}
-          subTitle={item.subTitle}
-        />
-      ))}
-      <Awards />
-    </PresentationContainer>
+    <>
+      <PresentationContainer>
+        <AnimationStyle delay={100}>
+          {items.map((item, index) => (
+            <PresentationItem
+              key={index}
+              number={item.number}
+              middleTitle={item.middleTitle}
+              subTitle={item.subTitle}
+            />
+          ))}
+        </AnimationStyle>
+        <AnimationStyle delay={200}>
+          <Awards />
+        </AnimationStyle>
+      </PresentationContainer>
+    </>
   );
 };
 
