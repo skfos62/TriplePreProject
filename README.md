@@ -1,46 +1,28 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Triple 사전 과제
 
-## Available Scripts
+[![사전과제 결과물 동영상](https://img.youtube.com/vi/EwNuGExTRGc/0.jpg)](https://youtu.be/EwNuGExTRGc) 
 
-In the project directory, you can run:
+트리플 홈페이지의 한 섹션을 구현하는 사전과제의 결과물 동영상입니다.
 
-### `npm start`
+## 프로젝트실행방법
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npm install
+```
+먼저 npm install 을 통해 패키지를 설치해주세요.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+npm start
+```
+서버를 실행해주세요.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 기술 스택
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 언어 : typescript
+- 라이브러리 : styled component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+위와 같이 기술 스택을 구성한 가장 큰 이유는 업무에서 사용하기 때문에, 코드를 작성하기에 가장 익숙하기도 하고,  
+제가 실제로 업무를 진행할때 어떤식으로 코드를 작성 하는지 잘 표현할수 있다고 생각해서 선택하였습니다. 
