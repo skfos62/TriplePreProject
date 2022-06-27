@@ -9,7 +9,7 @@ const AwardsContainer = styled.div`
 `;
 const AwardsWrapper = styled.div<{ url: string }>`
   position: relative;
-  background-image: url(${props => props.url});
+  background-image: url(${(props) => props.url});
   background-size: 54px;
   background-repeat: no-repeat;
   width: 200px;

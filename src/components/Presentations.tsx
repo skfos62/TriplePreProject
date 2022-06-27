@@ -1,7 +1,6 @@
-import { render } from "@testing-library/react";
 import styled from "styled-components";
-import PresentationItem from "./PresentationItem";
 import Awards from "./Awards";
+import PresentationItem from "./PresentationItem";
 
 const PresentationContainer = styled.div`
   display: flex;
@@ -16,8 +15,9 @@ const Presentations = () => {
   ];
   return (
     <PresentationContainer>
-      {items.map(item => (
+      {items.map((item, index) => (
         <PresentationItem
+          key={index}
           numberTitle={item.numberTitle}
           subTitle={item.subTitle}
         />
