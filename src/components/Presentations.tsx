@@ -1,8 +1,7 @@
 import styled from "styled-components";
+import { AnimationStyle } from "./AnimationStyle";
 import Awards from "./Awards";
 import PresentationItem from "./PresentationItem";
-import { AnimationStyle } from "./AnimationStyle";
-import { AnimationCounterStyle } from "./AnimationCounterStyle";
 
 const PresentationContainer = styled.div`
   display: flex;

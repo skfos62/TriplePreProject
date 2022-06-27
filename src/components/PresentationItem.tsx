@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import CountNumber from "./Counter";
-import { AnimationCounterStyle } from "./AnimationCounterStyle";
 
 interface PresentationItemProps {
   number: number;

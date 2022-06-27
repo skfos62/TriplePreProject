@@ -7,6 +7,7 @@ const CommonLayout = styled.div`
   background-color: white;
   width: 1200px;
   margin: 50px;
+  gap: 100px;
 `;
 
 const Content = () => {

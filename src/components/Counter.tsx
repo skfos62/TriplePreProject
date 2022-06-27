@@ -18,7 +18,6 @@ const CountNumber = ({ start, end }: CounterProps) => {
         () => setCount(count < end - increment ? count + increment : end),
         time
       );
-
       return () => clearTimeout(timer);
     }
   };
