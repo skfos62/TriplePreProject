@@ -2,6 +2,11 @@ import styled from "styled-components";
 import appleAward from "./../assets/badge-apple4x.png";
 import playStoreAward from "./../assets/play-store2x.png";
 
+interface Awards {
+  url: string;
+  awardHistory: string;
+}
+
 const AwardsContainer = styled.div`
   display: flex;
   margin-top: 30px;
@@ -12,7 +17,7 @@ const AwardsWrapper = styled.div<{ url: string }>`
   background-image: url(${props => props.url});
   background-size: 54px;
   background-repeat: no-repeat;
-  width: 200px;
+  width: 210px;
   height: 64px;
 `;
 const AwardText = styled.p`
@@ -26,24 +31,28 @@ const AwardText = styled.p`
   top: 10%;
   text-align: left;
   line-height: 1.5;
+  white-space: pre-wrap;
 `;
 
 const Awards = () => {
+  const items: Awards[] = [
+    {
+      url: playStoreAward,
+      awardHistory: `2018 구글 플레이스토어\n올해의 앱 최우수상 수상`
+    },
+    {
+      url: appleAward,
+      awardHistory: `2018 애플 앱스토어\n오늘의 여행앱 선정`
+    }
+  ];
   return (
     <>
       <AwardsContainer>
-        <AwardsWrapper url={playStoreAward}>
-          <AwardText>
-            2018 구글 플레이스토어 <br />
-            올해의 앱 최우수상 수상
-          </AwardText>
-        </AwardsWrapper>
-        <AwardsWrapper url={appleAward}>
-          <AwardText>
-            2018 구글 플레이스토어 <br />
-            올해의 앱 최우수상 수상
-          </AwardText>
-        </AwardsWrapper>
+        {items.map((item, index) => (
+          <AwardsWrapper url={item.url} key={index}>
+            <AwardText>{item.awardHistory}</AwardText>
+          </AwardsWrapper>
+        ))}
       </AwardsContainer>
     </>
   );
